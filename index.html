@@ -1,13 +1,10 @@
-<!DOCTYPE html>
 <html>
   <body>
-    <h1 id="money"></h1>
+    <text>деньги:</text>
+    <text id="money"></text>
     <script>
-      i = 0;
-      while (1) {
-        setTimeout(() => {  i = i + 1 }, 1000);
-        document.getElementById("money").src = "i";
-      }
+      var i = 0;
+      setInterval(() => { document.getElementById("money").innerHTML = i; i++ }, 1000);
     </script>
 
   </body>
